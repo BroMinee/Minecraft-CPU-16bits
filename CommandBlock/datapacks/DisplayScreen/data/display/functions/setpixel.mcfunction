@@ -1,0 +1,16 @@
+execute if score color DisplayScreen matches 0 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:white_concrete
+execute if score color DisplayScreen matches 1 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:orange_concrete
+execute if score color DisplayScreen matches 2 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:magenta_concrete
+execute if score color DisplayScreen matches 3 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:light_blue_concrete
+execute if score color DisplayScreen matches 4 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:yellow_concrete
+execute if score color DisplayScreen matches 5 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:lime_concrete
+execute if score color DisplayScreen matches 6 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:pink_concrete
+execute if score color DisplayScreen matches 7 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:gray_concrete
+execute if score color DisplayScreen matches 8 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:light_gray_concrete
+execute if score color DisplayScreen matches 9 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:cyan_concrete
+execute if score color DisplayScreen matches 10 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:purple_concrete
+execute if score color DisplayScreen matches 11 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:blue_concrete
+execute if score color DisplayScreen matches 12 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:brown_concrete
+execute if score color DisplayScreen matches 13 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:green_concrete
+execute if score color DisplayScreen matches 14 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:red_concrete
+execute if score color DisplayScreen matches 15 run execute at @e[type=minecraft:armor_stand,tag=displayCursor,limit=1] run setblock ~ ~ ~ minecraft:black_concrete

@@ -1,0 +1,3 @@
+execute as @a run execute unless score @s write_instruction matches -1 as @s run function write_instruction:analyse_trigger
+execute as @a run execute unless score @s select_hexa matches 0 as @s run function write_instruction:analyse_trigger
+execute if score PC Computer matches 65536.. run tellraw @a[tag=debug] [{"text":"PC OUT OF RANGE !!! ","color":"red","bold": true},{"score":{"name":"PC","objective":"Computer"},"color": "dark_red"},{"text":" >= 65536 ","color":"red","bold": true}]

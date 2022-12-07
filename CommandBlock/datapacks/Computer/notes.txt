@@ -1,0 +1,120 @@
+38 050 every ticks are really hurting badly the TPS
+le nombre de fonction executer par un /function est reel (il compte egalement les sous-fonction)
+
+
+ADC ✅
+AND ✅
+ASL ✅
+BCC ✅
+BCS ✅
+BEQ ✅
+BIT ✅
+BMI ✅
+BNE ✅
+BPL ✅
+BRK ✅ but incomplete need to manage interrupt
+BVC ✅
+BVS ✅
+CLC ✅
+CLD ✅
+CLI ✅
+CLV ✅
+CMP ✅
+CPX ✅
+CPY ✅
+DEC ✅
+DEX ✅
+DEY ✅
+EOR ✅
+INC ✅
+INX ✅
+INY ✅
+JMP ✅
+JSR ✅
+LDA ✅
+LDX ✅
+LDY ✅
+LSR ✅ (check if N could be =1 after rotation)
+NOP ✅
+ORA ✅
+PHA ✅
+PHP ✅
+PLA ✅
+PLP ✅
+ROL ✅
+ROR ✅
+RTI ❌
+RTS ✅
+SBC ✅
+SEC ✅
+SED ✅
+SEI ✅
+STA ✅
+STX ✅
+STY ✅
+TAX ✅
+TAY ✅
+TSX ✅
+TXA ✅
+TXS ✅
+TYA ✅
+
+
+Test 1: (INC $00 ; JMP $600 ; 2 cyles = 1 743 commands ; 50 cycles/tick)
+Time IG is 90.4 % of the IRL Time
+Commands / tick = 43 575
+
+Test2: (same condition as Test1 but add 256 armor_stand without tag)
+Time IG is 28.3 % of the IRL Time
+
+Test3: (same condition as Test2 but add 256 pig with NoAI instead of armor_stand without tag)
+Time IG is 61.25 % of the IRL Time
+
+Test4: (same as Test3 but remove all type=armor_stand in the code)
+Time IG is 24.1 % of the IRL Time
+
+Test5: (INC $00;INX;INY;INC $00;INX;INY;JMP $600; 7 cycles = 4720 commands ; 50 cycles/tick)
+Time IG is 98,3 % of IRL Time
+Commands / tick = 33 714 commands
+
+Test6: (LDA ($20,X);ADC #$01;STA ($20,X);JMP $0600; 4 cycles = 3 649 commands; 50 cycles /ticks)
+Commands / tick = 45 612 commands
+Time IG is 71,2 of IRL Time
+
+
+Test6: (NOP;NOP;NOP;NOP;NOP;JSR $600) 6 cycles = 3 962 commands;50 cycles / ticks
+Commands / ticks = 33 016 commands
+Time IG is 98,3 of IRL Time
+
+#Test7 === (MEME QUE Test6 mais apres opti avec arbre binaire); 7 cycles = 2 725 commands; 50 cycles/ticks
+Commands / ticks = 19 464 commands
+Time IG is 100 of IRL Time
+
+#Test8 === (meme que Test1) 2 cycles = 1 177 commands; 50 cycles / tick
+Commands / ticks = 29 425 commands
+Time IG is 100 of IRL Time
+
+
+
+#Test10 === (meme que Test1 et Test8) 2 cycles = 1 177 commands; 64 cycles / tick
+Commands / ticks = 37 664 commands
+Time IG is 96,25 of IRL Time
+
+#Test11 === (meme que Test1 et Test8 et Test10) 2 cycles = 764 commands; 64 cycles /tick
+Commands / ticks = 24 448 commands
+Time IG is 100% of IRL Time
+
+#Test 5 7 cyles = 1 838 commands OPTI DE OUF
+
+#Test 12 (meme que test 6) 4 cyles = 1 651 commands ; 50 cycles / ticks
+Commands / ticks = 20 637 commands
+Time IG is 99,16% of IRL Time
+
+#Test 13 (meme que test 6) 4 cyles = 1 651 commands ; 100 cycles / ticks
+Commands / ticks = 41 275 commands
+Time IG is 81,6% of IRL Time
+
+## Benchmark : 64 cycles / tick see t.txt
+Performance Online : 17.98 sec pour le programme
+Performance Minecr : 1min44 pour le meme programme
+Performance after Opti goto : 1min31 pour le meme programme
