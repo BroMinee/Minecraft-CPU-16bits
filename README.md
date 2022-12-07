@@ -59,7 +59,7 @@ Memory locations $200 to $5ff map to the screen pixels. Different values will dr
 - $f: <FONT COLOR="Magenta">Magenta</FONT>
 
 # Q&A #
-### The program is running slowly, how to fix it ###
+### The program is running slowly, how to fix it ? ###
 Make sure you cannot optimize it anymore add more command block in chain mode at the tower located at 16 -45 29 over 64 it's overkill and will probably reduce your instruction/tick.
 
 ### How to know if my instruction/tick is low ? ###
@@ -69,8 +69,7 @@ Run you program for 5 minutes IRL and compare how much time does the timer in-ga
 Of course you will never reach https://skilldrick.github.io/easy6502/ speed but maybe you should consider looking at "Tips" section
 
 # Debug #
-You can see at any time the CPU status with the scoreboard but you can also run this commmand:
+You can see at any time the CPU status with the scoreboard but you can also run this commmand to have more details.
 ```bash
 /tag @p remove debug
 ```
-To have a more detail full debug.
