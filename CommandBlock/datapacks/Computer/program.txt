@@ -93,7 +93,7 @@ $06b7    e8        INX
 $06b8    e4 03     CPX $03
 $06ba    f0 06     BEQ $06c2
 $06bc    4c aa 06  JMP $06aa
-$06bf    4c 35 07  JMP $0735
+$06bf    4c 2e 07  JMP $072e
 $06c2    60        RTS 
 $06c3    a6 03     LDX $03
 $06c5    ca        DEX 
@@ -144,7 +144,7 @@ $070f    29 1f     AND #$1f
 $0711    c9 1f     CMP #$1f
 $0713    f0 01     BEQ $0716
 $0715    60        RTS 
-$0716    4c 35 07  JMP $0735
+$0716    4c 2e 07  JMP $072e
 $0719    a0 00     LDY #$00
 $071b    a5 fe     LDA $fe
 $071d    91 00     STA ($00),Y
@@ -156,9 +156,4 @@ $0726    a2 00     LDX #$00
 $0728    a9 01     LDA #$01
 $072a    81 10     STA ($10,X)
 $072c    60        RTS 
-$072d    a2 00     LDX #$00
-$072f    ea        NOP 
-$0730    ea        NOP 
-$0731    ca        DEX 
-$0732    d0 fb     BNE $072f
-$0734    60        RTS
+$072d    60        RTS 

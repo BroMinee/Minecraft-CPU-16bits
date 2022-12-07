@@ -64,7 +64,6 @@ fill 0 -60 0 31 -29 0 minecraft:black_concrete
 #fill -1 -3 1 -64 -4 64 minecraft:white_concrete
 #fill -1 1 1 -64 0 64 minecraft:white_concrete
 
-
 #plateform
 fill 0 -61 32 44 -61 1 stone
 

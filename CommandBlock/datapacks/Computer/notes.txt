@@ -1,5 +1,4 @@
-38 050 every ticks are really hurting badly the TPS
-le nombre de fonction executer par un /function est reel (il compte egalement les sous-fonction)
+38 050 cmd every ticks are really hurting badly the TPS
 
 
 ADC ✅
@@ -34,7 +33,7 @@ JSR ✅
 LDA ✅
 LDX ✅
 LDY ✅
-LSR ✅ (check if N could be =1 after rotation)
+LSR ✅
 NOP ✅
 ORA ✅
 PHA ✅
@@ -43,7 +42,7 @@ PLA ✅
 PLP ✅
 ROL ✅
 ROR ✅
-RTI ❌
+RTI ✅
 RTS ✅
 SBC ✅
 SEC ✅
@@ -80,7 +79,6 @@ Commands / tick = 33 714 commands
 Test6: (LDA ($20,X);ADC #$01;STA ($20,X);JMP $0600; 4 cycles = 3 649 commands; 50 cycles /ticks)
 Commands / tick = 45 612 commands
 Time IG is 71,2 of IRL Time
-
 
 Test6: (NOP;NOP;NOP;NOP;NOP;JSR $600) 6 cycles = 3 962 commands;50 cycles / ticks
 Commands / ticks = 33 016 commands

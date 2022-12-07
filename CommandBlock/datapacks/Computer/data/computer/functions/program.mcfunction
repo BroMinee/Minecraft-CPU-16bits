@@ -982,8 +982,8 @@ execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:b
 scoreboard players add WRITE_PC write_instruction 1
 scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:light_blue_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:lime_concrete
+execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:magenta_concrete
+execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:red_concrete
 scoreboard players add WRITE_PC write_instruction 1
 scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
@@ -1417,8 +1417,8 @@ execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:b
 scoreboard players add WRITE_PC write_instruction 1
 scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:light_blue_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:lime_concrete
+execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:magenta_concrete
+execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:red_concrete
 scoreboard players add WRITE_PC write_instruction 1
 scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
@@ -1524,41 +1524,6 @@ scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
 execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:pink_concrete
 execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:white_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:purple_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:magenta_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:white_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:white_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:red_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:purple_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:red_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:purple_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:brown_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:purple_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:green_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:white_concrete
-scoreboard players add WRITE_PC write_instruction 1
-scoreboard players operation goto Computer = WRITE_PC write_instruction
-execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-1 ~ minecraft:black_concrete
-execute as @e[type=armor_stand,tag=WRITE] at @s run setblock ~ ~-2 ~ minecraft:blue_concrete
 scoreboard players add WRITE_PC write_instruction 1
 scoreboard players operation goto Computer = WRITE_PC write_instruction
 execute as @e[type=armor_stand,tag=WRITE] run function computer:goto
