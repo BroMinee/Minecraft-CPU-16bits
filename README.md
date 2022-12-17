@@ -1,8 +1,8 @@
-<h1 align="center">Minecraft CPU-16bits</h1>
+<h1 align="center">Minecraft CPU-8bits</h1>
 <h2 align="center">Based on 6502 assembly language</h1>
 
 # What is this repo for ?
-This repo is a 1.19 minecraft world with a emulator of a CPU 16 bits using 6502 assembly opcode.
+This repo is a 1.19 minecraft world with a emulator of a CPU 8 bits using 6502 assembly opcode.
 
 ## How it works
 It only used command_block (datapack not portable to any other world). There are over 574 files.
